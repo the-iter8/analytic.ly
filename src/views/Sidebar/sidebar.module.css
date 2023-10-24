@@ -1,0 +1,36 @@
+.root {
+  padding-top: 2.5rem;
+  padding-right: 2.5rem;
+  border-right: 1px solid var(--primary-border);
+  max-width: 226px;
+  height: 100vh;
+}
+.listItem {
+  font-weight: 700;
+  border-radius: 0px 100px 100px 0px;
+  stroke: var(--secondary-text);
+  font-size: var(--md);
+  cursor: pointer;
+  color: var(--secondary-text);
+  padding: 4px;
+  margin-bottom: 0.5rem;
+  background-color: inherit;
+}
+.listItemSpan {
+  display: flex;
+  align-items: center;
+  margin-left: 2.5rem;
+  margin-bottom: 1.125rem;
+  gap: 0.938rem;
+}
+
+.listItem:hover,
+.listItem:nth-child(2) {
+  color: var(--hover-color);
+  background-color: var(--hover-bg);
+}
+
+.listItem:hover .listItemSpan svg {
+  stroke: var(--hover-color);
+  background-color: var(--hover-bg);
+}

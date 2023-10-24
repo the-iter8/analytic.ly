@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./navbar.module.css";
-import Logo from "../../assets/icons/Logo";
+import {Logo }from "../../assets/icons";
 import Avatar from "../../assets/images/avatar.png";
 function Profile() {
   return (

@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
 :root {
   --primary-text: #1e272e;
+  --secondary-text: #566474;
   --primary-border: #ebf0f5;
+  --hover-bg: #f7f8fa;
+  --hover-color: #445ee2;
   --md: 1rem;
 }
 
@@ -45,6 +48,7 @@ summary,
 body {
   color: var(--primary-text);
   font-size: var(--md);
+  /* overflow: hidden; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
