@@ -4,8 +4,12 @@
   --secondary-text: #566474;
   --primary-border: #ebf0f5;
   --hover-bg: #f7f8fa;
+  --btn-bg: #142683;
   --hover-color: #445ee2;
+  --sm: 0.75rem;
+  --smm: 0.875rem;
   --md: 1rem;
+  --lg: 1.375rem;
 }
 
 * {
@@ -33,6 +37,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  
 }
 
 label,
@@ -51,6 +56,21 @@ body {
   /* overflow: hidden; */
 }
 
+.primary-text {
+  font-weight: 700;
+  color: var(--primary-text);
+  font-size: var(--md);
+}
+.secondary-text {
+  font-weight: 400;
+  color: var(--secondary-text);
+  font-size: var(--sm);
+}
+.large-text {
+  font-weight: 700;
+  color: var(--primary-text);
+  font-size: var(--lg);
+}
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;

@@ -1,0 +1,78 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  padding: 1.875rem 2.54rem;
+}
+.root > p {
+  font-weight: 400;
+  font-size: var(--sm);
+  color: var(--secondary-text);
+}
+
+.commonContainer {
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid var(--primary-border);
+  padding: 1.875rem;
+}
+.leftAside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+.modalEntryContainer {
+  display: flex;
+  gap: 10rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.modalEntrySubContainer {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.htmlImg {
+  height: 50px;
+}
+
+.updateBtn {
+  color: white;
+  line-height: 28px;
+  background-color: var(--btn-bg);
+  border-radius: 5px;
+  padding: 0.5rem 2.219rem;
+}
+
+.quickStatsContainer {
+  display: flex;
+  gap: 1.25rem;
+  flex-direction: column;
+}
+.quickStatsSubContainer {
+  display: flex;
+}
+
+.statContainer {
+  display: flex;
+  gap: 1.25rem;
+}
+.statIcon {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--hover-bg);
+  border-radius: 100%;
+}
+.verticalLine {
+  width: 1px;
+  height: 50px;
+  margin: 0 3.125rem;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid var(--primary-border);
+}
