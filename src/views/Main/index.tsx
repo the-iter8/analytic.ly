@@ -1,19 +1,17 @@
 // @ts-nocheck
-import React from "react";
 
 import styles from "./main.module.css";
 import HTML from "../../assets/images/htmk.png";
-const statData = [
-  { iconContent: "🏆", value: "12,890", label: "YOUR RANK" },
-  { iconContent: "📋", value: "37%", label: "PERCENTILE" },
-  { iconContent: "✅", value: "07/15", label: "CORRECT ANSWERS" },
-];
+import { statData, syllabusData } from "../../utils/constants";
+import LineElementC from "../../components/Charts/LineElementC";
+import ProgressBar from "@ramonak/react-progress-bar";
+
 export default function Main() {
   return (
     <main className={styles.root}>
       <p>Skill Test</p>
-      <div>
-        <div className={styles.leftAside}>
+      <div className={styles.lower}>
+        <div className={styles.aside}>
           <div className={styles.commonContainer}>
             <div className={styles.modalEntryContainer}>
               <div className={styles.modalEntrySubContainer}>
@@ -69,13 +67,42 @@ export default function Main() {
                 </div>
                 <div className={styles.statIcon}>📈</div>
               </div>
-              <div></div>
+              <div>
+                <LineElementC customValue={98} />
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <div></div>
-          <div></div>
+        <div className={styles.aside}>
+          <div className={styles.commonContainer}>
+            <div className={styles.syllabusContainer}>
+              <p className='primary-text' style={{ marginBottom: "1.25rem" }}>
+                Syllabus wise Analysis
+              </p>
+              <div className={styles.syllabusSubContainer}>
+                {syllabusData.map((item, index) => (
+                  <div className={styles.syllabusItem} key={index}>
+                    <div>{item.topic}</div>
+                    <div className={styles.percentage}>
+                      <ProgressBar
+                        width='12rem'
+                        height='10px'
+                        completed={50}
+                        bgColor={item.bg}
+                        maxCompleted={100}
+                        isLabelVisible={false}
+                        margin='0 5.875rem 0 0'
+                      />
+                      <p className='primary-text' style={{ color: item.bg }}>
+                        {item.percentage}%
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className={styles.commonContainer}></div>
         </div>
       </div>
     </main>

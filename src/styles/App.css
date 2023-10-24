@@ -37,7 +37,6 @@ a {
 img {
   display: block;
   max-width: 100%;
-  
 }
 
 label,
@@ -71,6 +70,7 @@ body {
   color: var(--primary-text);
   font-size: var(--lg);
 }
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
