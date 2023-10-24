@@ -57,7 +57,21 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div></div>
+          <div className={styles.commonContainer}>
+            <div className={styles.comparisonGraphContainer}>
+              <div className={styles.comparisonGraphSubContainer}>
+                <div>
+                  <p className='primary-text' style={{ marginBottom: "1.25rem" }}>
+                    Comparison Graph
+                  </p>
+                  <p className='secondary-text'>You scored 37% percentile which is lower than the</p>
+                  <p className='secondary-text'>average percentile 72% of all the engineers who took this assessment</p>
+                </div>
+                <div className={styles.statIcon}>📈</div>
+              </div>
+              <div></div>
+            </div>
+          </div>
         </div>
         <div>
           <div></div>

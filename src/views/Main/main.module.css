@@ -76,3 +76,13 @@
   border-radius: 10px;
   border: 1px solid var(--primary-border);
 }
+.comparisonGraphContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+.comparisonGraphSubContainer{
+  display: flex;
+  gap: 10.6rem;
+  align-items: center;
+}
