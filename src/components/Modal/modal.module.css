@@ -1,0 +1,100 @@
+/* modal.module.css */
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modalContent {
+  background: #fff;
+  width: 880px;
+  padding: 2.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.modalHeadings {
+  display: flex;
+  justify-content: space-between;
+  font-size: 36px;
+  font-weight: 700;
+  color: #222f3e;
+  padding-bottom: 2.375rem;
+  border-bottom: 1px solid var(--primary-border);
+}
+.modalInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2.375rem;
+  padding: 1.75rem 0;
+  padding-bottom: 2.375rem;
+  border-bottom: 1px solid var(--primary-border);
+}
+.modalInputItem,
+.modalInputItemRank {
+  display: flex;
+  justify-content: space-between;
+}
+.modalInputItemRank {
+  gap: 1.25rem;
+}
+.modalInputItemNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: var(--btn-bg);
+}
+.modalInputItemName {
+  font-weight: 400;
+
+  font-size: var(--slg);
+  color: var(--secondary-text);
+}
+.modalInputItemSpanName {
+  font-weight: 700;
+  color: var(--primary-text);
+}
+.htmlImg {
+  height: 50px;
+}
+
+.modalInputField,
+.modalInputField:active,
+.modalInputField:focus,
+.modalInputField:focus-visible {
+  max-width: 157px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: var(--btn-bg);
+  font-weight: 700;
+
+  border: 2px solid var(--btn-bg);
+  outline: none;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2.375rem;
+  gap: 1.875rem;
+}
+
+.btn {
+  border-radius: 5px;
+  color: var(--btn-bg);
+  padding: 0.5rem 1rem;
+}
+.btn:nth-child(2) {
+  color: white;
+  background: var(--btn-bg);
+}

@@ -23,7 +23,6 @@ export default function DonutChart({ value }: { value: number }) {
     plugins: {
       legend: {
         display: false,
-        
       },
     },
   };

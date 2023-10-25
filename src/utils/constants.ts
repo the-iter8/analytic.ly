@@ -5,9 +5,9 @@ export const sideBarItems = [
   { logo: Interships, text: "Internships" },
 ];
 export const statData = [
-  { iconContent: "🏆", value: "12,890", label: "YOUR RANK" },
-  { iconContent: "📋", value: "37%", label: "PERCENTILE" },
-  { iconContent: "✅", value: "07/15", label: "CORRECT ANSWERS" },
+  { iconContent: "🏆", value: "rank", label: "YOUR RANK" },
+  { iconContent: "📋", value: "percentile", label: "PERCENTILE" },
+  { iconContent: "✅", value: "score", label: "CORRECT ANSWERS" },
 ];
 export const syllabusData = [
   { topic: "HTML Tools, Forms, History", percentage: 80, bg: "#438AF6" },
