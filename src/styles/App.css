@@ -54,7 +54,6 @@ body {
   color: var(--primary-text);
   font-size: var(--md);
   word-break: break-all;
-  overflow: hidden;
 }
 
 .primary-text {
