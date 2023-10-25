@@ -15,7 +15,6 @@
 }
 
 .commonContainer {
-  display: flex;
   border-radius: 10px;
   border: 1px solid var(--primary-border);
   padding: 1.875rem;
@@ -27,7 +26,6 @@
 }
 .modalEntryContainer {
   display: flex;
-  gap: 10rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -102,6 +100,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.progressBar {
+  margin-right: 3rem;
+}
 
 .syllabusItem {
   display: flex;
@@ -110,4 +111,35 @@
   font-weight: 400;
   color: var(--secondary-text);
   font-size: var(--md);
+}
+
+.donutContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 24rem;
+}
+.donutParent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.donutContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.donutHeadings {
+  display: flex;
+  justify-content: space-between;
+}
+.donutHeadingBlue {
+  color: #438af6;
+}
+.actualDonut {
+  width: 70%;
+}
+.donutTarget{
+  font-size: 40px;
+  position: absolute;
 }

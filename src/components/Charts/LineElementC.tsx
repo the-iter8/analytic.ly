@@ -1,11 +1,30 @@
 import { Line } from "react-chartjs-2";
-import { Chart as ChartJS, LineElement, CategoryScale, LinearScale, PointElement, Tooltip } from "chart.js";
+import {
+  Chart as ChartJS,
+  LineElement,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  Tooltip,
+} from "chart.js";
 type LineElementCProp = {
   customValue: number;
 };
 export default function LineElementC({ customValue }: LineElementCProp) {
   const data = {
-    labels: ["0%", "10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"],
+    labels: [
+      "0%",
+      "10%",
+      "20%",
+      "30%",
+      "40%",
+      "50%",
+      "60%",
+      "70%",
+      "80%",
+      "90%",
+      "100%",
+    ],
     datasets: [
       {
         data: [
@@ -57,6 +76,12 @@ export default function LineElementC({ customValue }: LineElementCProp) {
     },
   };
 
-  ChartJS.register(LineElement, Tooltip, CategoryScale, LinearScale, PointElement);
+  ChartJS.register(
+    LineElement,
+    Tooltip,
+    CategoryScale,
+    LinearScale,
+    PointElement
+  );
   return <Line data={data} options={options} />;
 }

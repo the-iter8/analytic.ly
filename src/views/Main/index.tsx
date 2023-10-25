@@ -1,9 +1,8 @@
-// @ts-nocheck
-
 import styles from "./main.module.css";
 import HTML from "../../assets/images/htmk.png";
 import { statData, syllabusData } from "../../utils/constants";
 import LineElementC from "../../components/Charts/LineElementC";
+import DonutChart from "../../components/Charts/DonutChart";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 export default function Main() {
@@ -85,13 +84,13 @@ export default function Main() {
                     <div>{item.topic}</div>
                     <div className={styles.percentage}>
                       <ProgressBar
-                        width='12rem'
+                        width='197px'
                         height='10px'
-                        completed={50}
+                        completed={item.percentage}
                         bgColor={item.bg}
                         maxCompleted={100}
                         isLabelVisible={false}
-                        margin='0 5.875rem 0 0'
+                        className={styles.progressBar}
                       />
                       <p className='primary-text' style={{ color: item.bg }}>
                         {item.percentage}%
@@ -102,7 +101,24 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div className={styles.commonContainer}></div>
+          <div className={styles.commonContainer}>
+            <div className={styles.donutContainer}>
+              <div className={styles.donutHeadings}>
+                <p className='primary-text'>Questions Analysis</p>
+                <p className={styles.donutHeadingBlue}>07/15</p>
+              </div>
+              <p className='title-text'>
+                <span className='span-text'>You scored 7 question correct out of 15.</span> However it still needs some
+                improvements
+              </p>
+              <div className={styles.donutParent}>
+                <div className={styles.actualDonut}>
+                  <DonutChart value={7} />
+                </div>
+                <div className={styles.donutTarget}>🎯</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

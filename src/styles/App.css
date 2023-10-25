@@ -52,7 +52,8 @@ summary,
 body {
   color: var(--primary-text);
   font-size: var(--md);
-  /* overflow: hidden; */
+  word-break: break-all;
+  overflow: hidden;
 }
 
 .primary-text {
@@ -69,6 +70,16 @@ body {
   font-weight: 700;
   color: var(--primary-text);
   font-size: var(--lg);
+}
+.span-text {
+  font-weight: 700;
+  color: var(--secondary-text);
+  font-size: var(--smm);
+}
+.title-text {
+  font-weight: 400;
+  color: var(--secondary-text);
+  font-size: var(--smm);
 }
 
 @media (prefers-reduced-motion: no-preference) {

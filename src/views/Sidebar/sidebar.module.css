@@ -2,7 +2,7 @@
   padding-top: 2.5rem;
   padding-right: 2.5rem;
   border-right: 1px solid var(--primary-border);
-  max-width: 226px;
+  width: 226px;
   height: 100vh;
 }
 .listItem {
